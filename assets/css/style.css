@@ -326,11 +326,11 @@ img {
 
   transition-property: background, transform;
   transition-duration: .3, .5;
-  transition-timing-function: cubic-bezier(0,-0.68,.5,1.11); 
- 
+  transition-timing-function: cubic-bezier(0, -0.68, .5, 1.11);
+
 }
 
- /* .about__card:hover{
+/* .about__card:hover{
   transition-timing-function: cubic-bezier(0,-0.68,.5,1.11);
   transform: scale(.8);
 }  */
