@@ -297,6 +297,10 @@ img {
   text-align: center;
 }
 
+.cv__buttons {
+  text-align: center;
+}
+
 /* ==========About========*/
 .about {
   background-color: var(--container-contact-form-color);
