@@ -230,6 +230,7 @@ img {
   font-size: 1.2rem;
   font-weight: var(--font-semi-bold);
   transition: color .3s;
+ 
 }
 
 .navbar__link:hover {
@@ -257,6 +258,7 @@ img {
 
 .home__image {
   width: clamp(min(320px, 100%), 85vh, 445px);
+  text-align: center;
   height: auto;
   margin: 0 auto;
 }
@@ -323,17 +325,15 @@ img {
   -webkit-box-shadow: 30px 37px 34px -4px rgba(54, 115, 110, 0.62);
   -moz-box-shadow: 30px 37px 34px -4px rgba(54, 115, 110, 0.62);
   background-color: var(--card-color);
-
-  transition-property: background, transform;
-  transition-duration: .3, .5;
-  transition-timing-function: cubic-bezier(0, -0.68, .5, 1.11);
+  
+  transition-duration:  .5s;
 
 }
 
-/* .about__card:hover{
-  transition-timing-function: cubic-bezier(0,-0.68,.5,1.11);
-  transform: scale(.8);
-}  */
+.about__card:hover{
+   transform: rotate(15deg); 
+   transform-origin: center bottom;
+}  
 
 .about__card .bx {
   padding: 12px;
@@ -358,9 +358,13 @@ img {
 }
 
 /*========== Projects ======*/
+.projects{
+  background-color: #65e2d1da;
+}
 .projects__container {
   gap: 2rem;
-
+  width: 100%;
+ 
 }
 
 .projects__inner {
@@ -370,10 +374,11 @@ img {
   box-shadow: 30px 37px 34px -4px rgba(54, 115, 110, 0.62);
   -webkit-box-shadow: 30px 37px 34px -4px rgba(54, 115, 110, 0.62);
   -moz-box-shadow: 30px 37px 34px -4px rgba(54, 115, 110, 0.62);
+  transition-duration:  .5s;
 }
 
 .projects__inner:hover {
-  transform: translateY(8px);
+  transform: scale(1.1);
   box-shadow: var(--button-shadow);
 }
 
@@ -502,6 +507,7 @@ textarea {
 
 /*=========BREAKPOINT==========*/
 
+
 @media (max-width: 768px) {
   .navbar__menu {
     position: fixed;
@@ -513,6 +519,10 @@ textarea {
     box-shadow: 0px 1px 9px 2px #00000024;
     padding: 4.5rem 1rem 2rem;
     transition: .6s;
+  }
+  body {
+    font-size: var(--small-font-size);
+    margin: 0;
   }
 }
 
