@@ -231,11 +231,27 @@ img {
   font-size: 1.2rem;
   font-weight: var(--font-semi-bold);
   transition-property: color;
-  transition-duration: .3s;
+  transition-duration: .5s;
+  position: relative;
 
 }
 
-
+.navbar__link:after{
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: #00b4d8;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition-duration: .5s;
+  will-change: width;
+}
+.navbar__link:hover:after{
+  width: 100%;
+  right: 0;
+  transform: scale(1);
+}
 
 .navbar__link:hover {
   color: var(--text-primary);
