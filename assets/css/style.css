@@ -508,6 +508,52 @@ textarea {
 /* ============= Media Queries ============= */
 
 /*=========BREAKPOINT==========*/
+@media screen and (min-width: 234px) {
+ 
+
+  body {
+    font-size: var(--small-font-size);
+    margin: none;
+    width: 100%;
+    padding: none;
+   
+    margin: none;
+  }
+
+  .projects__container {
+   
+    width: 100%;
+  
+  }
+  .projects__inner {
+    margin: 0;
+    width: 80%;
+    background-color: #dae3e5;
+    border-radius: 20px;
+    box-shadow: 30px 37px 34px -4px rgba(54, 115, 110, 0.62);
+    -webkit-box-shadow: 30px 37px 34px -4px rgba(54, 115, 110, 0.62);
+    -moz-box-shadow: 30px 37px 34px -4px rgba(54, 115, 110, 0.62);
+    transition-duration: .5s;
+  }
+
+  .projects__image  {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    border-radius: 20px;
+  
+  }
+
+  .projects__image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    border-radius: 20px;
+  
+  }
+}
 
 
 @media (max-width: 768px) {
