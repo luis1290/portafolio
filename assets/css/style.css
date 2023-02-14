@@ -508,23 +508,30 @@ textarea {
 /* ============= Media Queries ============= */
 
 /*=========BREAKPOINT==========*/
-@media screen and (min-width: 234px) {
- 
+@media screen and (min-width: 200px) {
+
 
   body {
     font-size: var(--small-font-size);
     margin: none;
     width: 100%;
     padding: none;
-   
+
     margin: none;
   }
 
-  .projects__container {
-   
-    width: 100%;
-  
+  .home__image {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
   }
+
+  .projects__container {
+
+    width: 100%;
+
+  }
+
   .projects__inner {
     margin: 0;
     width: 80%;
@@ -536,13 +543,13 @@ textarea {
     transition-duration: .5s;
   }
 
-  .projects__image  {
+  .projects__image {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 5px;
     border-radius: 20px;
-  
+
   }
 
   .projects__image img {
@@ -551,7 +558,7 @@ textarea {
     object-fit: cover;
     border-radius: 5px;
     border-radius: 20px;
-  
+
   }
 }
 
